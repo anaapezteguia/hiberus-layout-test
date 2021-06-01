@@ -1,0 +1,17 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth; }
+
+ul,
+li {
+  list-style-type: none; }
+
+.header__img {
+  width: 150px; }
+
+.footer__img {
+  width: 150px; }
+
+/*# sourceMappingURL=main.css.map */
