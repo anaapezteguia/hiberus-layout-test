@@ -4,9 +4,16 @@
   line-height: rem(20);
   &__content {
     padding: rem(30) 0;
+    width: 100%;
     display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    @include tablet {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: flex-end;
+    }
   }
   &__img {
     width: rem(300);
@@ -14,7 +21,10 @@
     display: inline;
   }
   &__nav {
-    width: 40%;
+    margin-top: rem(25);
+    @include tablet {
+      width: 40%;
+    }
   }
   &__menu {
     display: flex;

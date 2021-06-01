@@ -11,20 +11,47 @@ li {
 a {
   text-decoration: none; }
 
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  .main__nav .sideMenu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end; }
+  .main__content--hero {
+    background-image: url(../../assets/images/virentia3.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 15.625rem; }
+
 .header {
   font-family: "Lato", sans-serif;
   line-height: 1.25rem; }
   .header__content {
     padding: 1.875rem 0;
+    width: 100%;
     display: flex;
-    justify-content: space-between;
-    align-items: flex-end; }
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    @media all and (min-width: 768px) {
+      .header__content {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-end; } }
   .header__img {
     width: 18.75rem;
     min-width: 9.375rem;
     display: inline; }
   .header__nav {
-    width: 40%; }
+    margin-top: 1.5625rem; }
+    @media all and (min-width: 768px) {
+      .header__nav {
+        width: 40%; } }
   .header__menu {
     display: flex;
     justify-content: space-between;
@@ -43,15 +70,24 @@ a {
   line-height: 1.25rem; }
   .footer__content {
     padding: 1.875rem 0;
+    width: 100%;
     display: flex;
-    justify-content: space-between;
-    align-items: flex-end; }
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    @media all and (min-width: 768px) {
+      .footer__content {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-end; } }
   .footer__img {
     width: 9.375rem;
     min-width: 4.6875rem;
-    display: inline; }
-  .footer__nav {
-    width: 60%; }
+    display: inline;
+    margin-top: 1.5625rem; }
+  @media all and (min-width: 768px) {
+    .footer__nav {
+      width: 60%; } }
   .footer__menu {
     display: flex;
     color: #006633;

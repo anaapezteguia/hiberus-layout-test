@@ -1,2 +1,23 @@
-body {
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  &__nav {
+    .sideMenu {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: flex-end;
+    }
+  }
+  &__content {
+    &--hero {
+      background-image: url(../../assets/images/virentia3.jpg);
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      min-height: rem(250);
+    }
+  }
 }
