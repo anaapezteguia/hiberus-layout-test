@@ -1,5 +1,32 @@
 .header {
+  // background-color: $backgroundNeutral;
+  font-family: $textFont;
+  line-height: rem(20);
+  &__content {
+    padding: rem(30) 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
   &__img {
-    width: 150px;
+    width: rem(300);
+    min-width: rem(150);
+    display: inline;
+  }
+  &__nav {
+    width: 40%;
+  }
+  &__menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &--link {
+      color: $brandDark;
+      padding: rem(5) rem(10);
+    }
+    &--link:hover {
+      color: white;
+      background-color: $brandLight;
+    }
   }
 }

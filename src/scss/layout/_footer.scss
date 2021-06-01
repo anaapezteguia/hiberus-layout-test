@@ -1,5 +1,32 @@
 .footer {
+  padding: rem(15) 0;
+  background-color: $backgroundNeutral;
+  font-family: $textFont;
+  line-height: rem(20);
+  &__content {
+    padding: rem(30) 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
   &__img {
-    width: 150px;
+    width: rem(150);
+    min-width: rem(75);
+    display: inline;
+  }
+  &__nav {
+    width: 60%;
+  }
+  &__menu {
+    display: flex;
+    color: $brandDark;
+    align-items: center;
+    &--link {
+      color: $brandDark;
+      padding: 0 rem(15);
+    }
+    &--link:hover {
+      color: $brandLight;
+    }
   }
 }
