@@ -16,11 +16,29 @@ a {
   flex-direction: column;
   justify-content: center;
   align-items: center; }
-  .main__nav .sideMenu {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: flex-end; }
+  .main__nav {
+    background-color: #a84758;
+    width: 100%; }
+    .main__nav .sideMenu {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      font-family: "Merriweather", serif;
+      padding: 0.9375rem; }
+      @media all and (min-width: 768px) {
+        .main__nav .sideMenu {
+          flex-wrap: no-wrap; } }
+      .main__nav .sideMenu__link {
+        color: white;
+        padding: 0.5rem 1.5625rem;
+        display: block;
+        font-size: rem(12); }
+      .main__nav .sideMenu__link:hover {
+        color: #572932; }
+  .main__content--aside {
+    width: 23.4375rem; }
   .main__content--hero {
     background-image: url(../../assets/images/virentia3.jpg);
     background-position: center;
@@ -67,7 +85,8 @@ a {
   padding: 0.9375rem 0;
   background-color: #f1f1f1;
   font-family: "Lato", sans-serif;
-  line-height: 1.25rem; }
+  line-height: 1.25rem;
+  width: 100%; }
   .footer__content {
     padding: 1.875rem 0;
     width: 100%;
@@ -78,7 +97,6 @@ a {
     @media all and (min-width: 768px) {
       .footer__content {
         flex-direction: row;
-        justify-content: space-between;
         align-items: flex-end; } }
   .footer__img {
     width: 9.375rem;
@@ -94,7 +112,10 @@ a {
     align-items: center; }
     .footer__menu--link {
       color: #006633;
-      padding: 0 0.9375rem; }
+      padding: 0 0.3125rem; }
+      @media all and (min-width: 768px) {
+        .footer__menu--link {
+          padding: 0 0.9375rem; } }
     .footer__menu--link:hover {
       color: #95c11f; }
 

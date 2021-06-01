@@ -4,14 +4,35 @@
   justify-content: center;
   align-items: center;
   &__nav {
+    background-color: $brandSecondary;
+    width: 100%;
     .sideMenu {
       display: flex;
       flex-direction: row;
-      justify-content: space-between;
-      align-items: flex-end;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      font-family: $sideMenuFont;
+      padding: rem(15);
+      @include tablet {
+        // flex-direction: column;
+        flex-wrap: no-wrap;
+      }
+      &__link {
+        color: white;
+        padding: rem(8) rem(25);
+        display: block;
+        font-size: $fontSmall;
+      }
+      &__link:hover {
+        color: $brandSecondaryDark;
+      }
     }
   }
   &__content {
+    &--aside {
+      width: rem(375);
+    }
     &--hero {
       background-image: url(../../assets/images/virentia3.jpg);
       background-position: center;
