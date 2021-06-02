@@ -38,13 +38,16 @@ a {
       .main__nav .sideMenu__link {
         color: white;
         padding: 1.125rem 1.5625rem;
-        display: block;
-        font-size: rem(12); }
+        display: block; }
         @media all and (min-width: 768px) {
           .main__nav .sideMenu__link {
             color: #a84758; } }
       .main__nav .sideMenu__link:hover {
-        color: #006633; }
+        color: #572932;
+        font-size: rem(12); }
+        @media all and (min-width: 768px) {
+          .main__nav .sideMenu__link:hover {
+            color: #006633; } }
     @media all and (min-width: 768px) {
       .main__nav {
         width: 30%;

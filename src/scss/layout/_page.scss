@@ -27,13 +27,17 @@
         color: white;
         padding: rem(18) rem(25);
         display: block;
-        font-size: $fontSmall;
+        // font-size: $fontSmall;
         @include tablet {
           color: $brandSecondary;
         }
       }
       &__link:hover {
-        color: $brandDark;
+        color: $brandSecondaryDark;
+        font-size: $fontSmall;
+        @include tablet {
+          color: $brandDark;
+        }
       }
     }
     @include tablet {
