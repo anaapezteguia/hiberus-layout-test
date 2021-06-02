@@ -1,12 +1,13 @@
 .footer {
   padding: rem(15) 0;
-  background-color: $backgroundNeutral;
   font-family: $textFont;
   line-height: rem(20);
   width: 100%;
+  border-top: rem(2) solid $brandDark;
+
   &__content {
-    padding: rem(30) 0;
-    width: 100%;
+    margin: 0 rem(15);
+    padding: rem(15) 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -14,6 +15,7 @@
     @include tablet {
       flex-direction: row;
       align-items: flex-end;
+      justify-content: space-between;
     }
   }
   &__img {

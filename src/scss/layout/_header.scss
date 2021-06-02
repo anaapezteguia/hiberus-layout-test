@@ -1,12 +1,13 @@
 .header {
   font-family: $textFont;
   line-height: rem(20);
+  border-bottom: rem(2) solid $brandDark;
   &__content {
-    padding: rem(30) 0;
+    padding: rem(30) rem(25);
     width: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     @include tablet {
       flex-direction: row;
@@ -21,17 +22,13 @@
   }
   &__nav {
     margin-top: rem(25);
-    @include tablet {
-      width: 40%;
-    }
   }
   &__menu {
     display: flex;
-    justify-content: space-between;
     align-items: center;
     &--link {
       color: $brandDark;
-      padding: rem(5) rem(10);
+      padding: rem(5) rem(20);
     }
     &--link:hover {
       color: white;
