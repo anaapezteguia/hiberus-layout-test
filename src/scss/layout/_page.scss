@@ -12,20 +12,25 @@
       justify-content: center;
       align-items: center;
       font-family: $sideMenuFont;
-      padding: rem(35);
+      padding: rem(15) rem(35);
+      background-color: $brandSecondary;
       @include tablet {
         flex-direction: column;
         align-items: flex-start;
+        background-color: white;
         & li {
           border-bottom: rem(1) dotted $brandSecondary;
           width: 100%;
         }
       }
       &__link {
-        color: $brandSecondary;
+        color: white;
         padding: rem(18) rem(25);
         display: block;
         font-size: $fontSmall;
+        @include tablet {
+          color: $brandSecondary;
+        }
       }
       &__link:hover {
         color: $brandDark;
@@ -46,15 +51,11 @@
     align-items: center;
   }
   &__content {
-    &--aside {
-      min-width: rem(375);
-    }
+    margin-top: rem(30);
     &--hero {
-      background-image: url(../../assets/images/virentia3.jpg);
-      background-position: center;
-      background-size: cover;
-      background-repeat: no-repeat;
-      min-height: rem(250);
+      background-color: $backgroundNeutral;
+      //   min-height: rem(250);
+      padding: rem(25);
     }
     @include tablet {
       width: 70%;
@@ -62,5 +63,61 @@
     @include desktop {
       width: 80%;
     }
+    &--aside {
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      @include tablet {
+        flex-direction: row;
+        justify-content: space-between;
+      }
+    }
+  }
+}
+.aside {
+  font-family: $textFont;
+  line-height: rem(22);
+  padding: rem(30);
+  margin: rem(35) 0;
+  background-color: $backgroundNeutral;
+
+  @include tablet {
+    width: 30%;
+  }
+  &__img {
+    margin-bottom: rem(20);
+    width: 100%;
+    object-fit: cover;
+  }
+  &__text {
+    margin-bottom: rem(20);
+  }
+  &__link {
+    margin: rem(10) 0;
+    padding: rem(5) rem(20);
+    background-color: $brandSecondary;
+    color: white;
+    border-radius: rem(15);
+    text-align: left;
+    display: inline-block;
+  }
+  &__link:hover {
+    background-color: $brandLight;
+    color: $brandDark;
+  }
+}
+.smallPic {
+  width: 100%;
+  object-fit: cover;
+  @include tablet {
+    display: none;
+  }
+}
+.bigPic {
+  width: 100%;
+  object-fit: cover;
+  display: none;
+  @include tablet {
+    display: block;
   }
 }
