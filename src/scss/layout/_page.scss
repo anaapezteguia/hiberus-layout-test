@@ -54,7 +54,6 @@
     margin-top: rem(30);
     &--hero {
       background-color: $backgroundNeutral;
-      //   min-height: rem(250);
       padding: rem(25);
     }
     @include tablet {
